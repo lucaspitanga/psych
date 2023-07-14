@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+        <!-- Stylesheet do bootstrap -->
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+        <!-- Stylesheet manual -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- Stylesheets fonte (Google Fonts) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav class="navigation_bar">
+          <div class="navbar p-0 justify-content-between">
+            <button
+              onclick="openMenu()"
+              class="button_fix d-inline border-0 bg-transparent disable_menu"
+              type="button"
+              id="open"
+            >
+              <img src="./assets/icon/menu.png" alt="menu.png" />
+            </button>
+  
+            <div class="menu_mobile position-absolute top-0 d-none " id="menu-aberto">
+              <div>
+                <button
+                onclick="openMenu()"
+                class="button_fix d-inline border-0 bg-transparent"
+                type="button"
+                id="close"
+              >
+                <img src="./assets/icon/botao-fechar.png" alt="chopsticks.png" />
+                
+              </button>
+              </div>
+              <div class="d-flex justify-content-start menu_link--text">
+                <ul>
+                  <li><a onclick="openMenu()" href="#psicologiaId">Psicologia</a></li>
+                  <li><a onclick="openMenu()" href="#terapiasId">Terapias</a></li>
+                  <li><a onclick="openMenu()" href="#sobreMimId">Sobre mim</a></li>
+                  <li><a onclick="openMenu()" href="#localId">Local</a></li>
+                  <li><a onclick="openMenu()" href="#contatoId">Contato</a></li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-center button_agendar">
+              <button class="btn button_fix">Agende sua consulta!</button>
+            </div>
+            </div>
+  
+            <a href="#homeId" class="button_fix d-inline logo_text">
+              <img src="./assets/icon/psicologia.png" alt="menu.png" />
+              <p>Locus</p>
+            </a>
+
+            <div class="blank"></div>
+  
+            <div class="menu_link--container disable">
+              <ul class="menu_link--text">
+                <li><a href="#psicologiaId">Psicologia</a></li>
+                <li><a href="#terapiasId">Terapias</a></li>
+                <li><a href="#sobreMimId">Sobre mim</a></li>
+                <li><a href="#localId">Local</a></li>
+                <li><a href="#contatoId">Contato</a></li>
+              </ul>
+            </div>
+  
+        </nav>
+      </header>
+
+      <main id="homeId">
+        <div class="container_main color_test row_desktop">
+            <div class="texto_titulo col-sm-8">
+                <h2>A caminhada nunca foi fácil.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque minus doloribus assumenda eius maxime odit magnam, suscipit necessitatibus totam ad voluptatum sint itaque sed dolores provident quam fugiat atque!</p>
+            </div>
+            <div class="titulo_img d-flex justify-content-end col">
+                <img src="./assets/img/main-sign.jpg" alt="">
+            </div>
+    </div>
+
+    <div class="container">
+        <div class=" d-flex justify-content-center">
+        <h1 id="underlineMain" class="titulo_card--main">Benefícios da Terapia</h1>
+        </div>
+        <div class="top_pop grid row_desktop titulo_card justificar">
+        <div class="texto_card coluna">
+            <img src="./assets/img/mente-saudavel.png" alt="">
+            <h2>Mente Saudável</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe vero nobis repudiandae dolorem ipsam asperiores at beatae minus nesciunt quo.</p>
+        </div>
+        <div class="texto_card coluna">
+            <img src="./assets/img/corpo-saudavel.png" alt="">
+            <h2>Corpo Saudável</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe vero nobis repudiandae dolorem ipsam asperiores at beatae minus nesciunt quo.</p>
+        </div>
+        <div class="texto_card texto_auto coluna">
+            <img src="./assets/img/autoconhecimento.png" alt="">
+            <h2>Auto Conhecimento</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe vero nobis repudiandae dolorem ipsam asperiores at beatae minus nesciunt quo.</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="psicologiaId" class="container_conteudo">
+        <div class="container">
+        <div class="d-flex justify-content-center">
+            <h1 id="underlinePsi" class="titulo_card--vc">Qual a importância da Psicologia?</h1>
+            </div>
+            <div class="pt-5 pb-5 texto_paragrafo--vc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate vitae similique ea qui. Deserunt quibusdam ipsa explicabo in. Eligendi, rem? Nesciunt nemo voluptate eos fuga recusandae ipsa ex expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident mollitia animi similique ex cupiditate, eaque quas esse numquam quod maxime harum, consequatur ut deserunt doloremque a culpa, debitis blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit iusto pariatur quas at quis necessitatibus voluptate maxime, optio quam tenetur animi ex! Maxime ipsum ab soluta praesentium? Unde, repellat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, reprehenderit natus, eligendi asperiores veniam aperiam eum pariatur officia cum porro incidunt rerum fuga minus corporis dolorum, deserunt id obcaecati. Repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate vitae similique ea qui. Deserunt quibusdam ipsa explicabo in. Eligendi, rem? Nesciunt nemo voluptate eos fuga recusandae ipsa ex expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident mollitia animi similique ex cupiditate, eaque quas esse numquam quod maxime harum, consequatur ut deserunt doloremque a culpa, debitis blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste suscipit iusto pariatur quas at quis necessitatibus voluptate maxime, optio quam tenetur animi ex! Maxime ipsum ab soluta praesentium? Unde, repellat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, reprehenderit natus, eligendi asperiores veniam aperiam eum pariatur officia cum porro incidunt rerum fuga minus corporis dolorum, deserunt id obcaecati. Repudiandae.</p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container img_conteudo flex pt-5">
+      <div>
+        <img src="./assets/img/analise.jpg" alt="">
+      </div>
+      <div class="texto_paragrafo pt-5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi, error voluptate ex, nulla doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi, error voluptate ex, nulla doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi, error voluptate ex, nulla doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi, error voluptate ex, nulla doloribus?</p>
+      </div>
+
+    </div>
+
+      <div id="terapiasId" class="container">
+      <div class="d-flex justify-content-center">
+          <h1 id="underlineTerapia" class="titulo_card--cont">Tipos de Terapia</h1>
+          </div>
+          </div>
+          <div class="pt-5">
+            <div class="circle_relative">
+              <figure class="circle"></figure>
+              <figure class="circle-1"></figure>
+              <figure class="circle-2"></figure>
+              <figure class="circle-3"></figure>
+              <figure class="circle-4"></figure>
+              <figure class="circle-5"></figure>
+              <figure class="circle-6"></figure>
+            </div>
+            <div class="container texto_paragrafo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deleniti alias maiores, odio consectetur, ducimus voluptas soluta dolorem modi nobis dolores ipsam non veniam eius molestiae consequuntur. Similique, odio explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolorum suscipit eum incidunt libero, quas labore repudiandae officiis cumque deleniti animi officia laudantium provident ratione reprehenderit, illo, amet maxime corrupti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, quaerat tenetur! Dicta, exercitationem ut corrupti fugiat nemo minus illum facilis minima optio repellendus impedit reiciendis tenetur asperiores obcaecati possimus hic!</p>
+          </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="row_desktop gap-1">
+                <div class="mt-2 card-transition">
+                    <div class="card card-bg card-body text-white texto_paragrafo">
+                      <h4>Psicanálise</h4>
+                      <hr>
+                      <br>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui debitis nemo blanditiis similique. Ut minus accusantium corporis nostrum, iste voluptas est corrupti? Dolorum repudiandae voluptates officiis totam aut perferendis.
+                      </p>
+                      <hr>
+                  </div>
+                  </div>
+                  <div class="row_desktop gap-1">
+                    <div class="mt-2 card-transition">
+                        <div class="card card-body texto_paragrafo">
+                          <h4>Psicodrama</h4>
+                          <hr>
+                          <br>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui debitis nemo blanditiis similique. Ut minus accusantium corporis nostrum, iste voluptas est corrupti? Dolorum repudiandae voluptates officiis totam aut perferendis.
+                          </p>
+                          <hr>
+                      </div>
+                      </div>
+                      <div class="row_desktop gap-1">
+                        <div class="mt-2 card-transition">
+
+                            <div class="card card-bg card-body text-white texto_paragrafo">
+                              <h4>Humanista</h4>
+                              <hr>
+                              <br>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi qui debitis nemo blanditiis similique. Ut minus accusantium corporis nostrum, iste voluptas est corrupti? Dolorum repudiandae voluptates officiis totam aut perferendis.
+                              </p>
+                              <hr>
+                          </div>
+                          </div>
+          </div>
+        </div>
+        </div>
+
+          <div class="container d-flex mt-5 texto_paragrafo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem voluptatibus, animi eveniet ea vero adipisci officiis non reprehenderit architecto omnis distinctio. Quisquam dolorum in aut inventore expedita excepturi dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem voluptatibus, animi eveniet ea vero adipisci officiis non reprehenderit architecto omnis distinctio. Quisquam dolorum in aut inventore expedita excepturi dolorem? Dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem voluptatibus, animi eveniet ea vero adipisci officiis non reprehenderit architecto omnis distinctio.</p>
+          </div>
+
+          <div id="sobreMimId" class="container">
+            <div class="d-flex justify-content-center">
+                <h1 id="underlineSobre" class="titulo_card--cont">Sobre mim</h1>
+                </div>
+                <div class="container row_desktop img_conteudo pt-5 pb-5 container_borda justify-content-center">
+                  <div class="sobre_mim--img">
+                    <img src="./assets/img/woman.png" alt="">
+                  </div>
+                  <div class="texto_paragrafo mt-5">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi, error voluptate ex, nulla doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi. Dolor sit amet consectetur adipisicing elit. Perferendis corporis ad obcaecati laborum eum debitis illum dolorum excepturi magnam repellat deleniti tenetur laboriosam voluptatum sequi.</p>
+                  </div>
+
+                </div>
+                </div>
+
+                <div id="localId" class="container">
+                  <div class="d-flex justify-content-center">
+                      <h1 id="underlineLocal" class="titulo_card--cont">Local</h1>
+                      </div>
+                      <div id="map_size" class="map_size mt-4 mb-4"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.280934374136!2d-49.28337122365006!3d-25.462293034172042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4833f0f0559%3A0xc6fac7c70a480683!2sSushiArte!5e0!3m2!1spt-BR!2sbr!4v1681478625508!5m2!1spt-BR!2sbr" height="100%" width="100%"></iframe></div>
+                    </div>
+    </main>
+
+    <div class="split"></div>
+
+    <footer id="contatoId" class="container_background mt-5" id="contactId">
+      <div class="tline"></div>
+      <div class="container row_desktop-ft">
+        <div class="text-white d-flex justify-content-center pb-3 pt-5 mt-5 col-sm-4">
+        <ul class="text_list text_list-2">
+          <li><a href="#homeId">Home</a></li>
+          <li><a href="#psicologiaId">Psicologia</a></li>
+          <li><a href="#terapiasId">Terapias</a></li>
+          <li><a href="#sobreMimId">Sobre mim</a></li>
+          <li><a href="#localId">Local</a></li>
+        </ul>
+        </div>
+        <div class="text-white d-flex justify-content-center pb-3 pt-5 mt-5 col-sm-4">
+          <ul class="text_list">
+            <li><a target="_blank" href="https://www.whatsapp.com/?lang=pt_br"><img src="./assets/icon/whatsapp.png" alt="whatsapp.png">(00) 0000-0000</a></li>
+            <li><img src="./assets/icon/instagram.png" alt="instagram.png"><a target="_blank" href="https://www.instagram.com/">Veja mais conteúdo!</a></li>
+            <li><img src="./assets/icon/mobile-app.png" alt="mobile-app.png"><a target="_blank" href="https://play.google.com/store/games?hl=pt_BR&gl=US&pli=1">Faça seu agendamento</a></li>
+            <li><img src="./assets/icon/home.png" alt="home.png"><a target="_blank" href="https://www.google.com.br/maps">Avenida, Lorem Ipsum, 000 - 00</a></li>
+          </ul>
+          </div>
+        <div class="logo_footer text-white mt-5 ms-5 col">
+          <a href="#homeId" class="d-inline">
+            <img src="./assets/icon/psicologia.png" alt="menu.png" width="150px" height="150px" />
+            <p class="text_align">Locus</p>
+          </a>
+          <p class="fix37">©2023 Todos os direitos reservados </p>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton" href="#homeId">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="#ffb14a"/>
+          <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>  
+  </a>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Manual  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Bootstrap  -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
